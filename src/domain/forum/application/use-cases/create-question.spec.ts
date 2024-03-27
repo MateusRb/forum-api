@@ -1,5 +1,5 @@
 import { CreateQuestionUseCase } from '@/domain/forum/application/use-cases/create-question'
-import { InMemoryQuestionsRepository } from 'test/repository/in-memory-question-repository'
+import { InMemoryQuestionsRepository } from 'test/repository/in-memory-questions-repository'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 let sut: CreateQuestionUseCase
