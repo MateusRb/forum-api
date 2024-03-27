@@ -21,6 +21,7 @@
     },
     "homepage": "https://github.com/MateusRb/forum-api#readme",
     "devDependencies": {
+        "@faker-js/faker": "^8.4.1",
         "@rocketseat/eslint-config": "^2.2.2",
         "@types/node": "^20.11.30",
         "eslint": "^8.57.0",
