@@ -1,5 +1,6 @@
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { EditQuestionUseCase } from '@/domain/forum/application/use-cases/edit-question'
+import { NotAllowedError } from '@/domain/forum/application/use-cases/errors/not-allowed-error'
 import { makeQuestion } from 'test/factories/make-question'
 import { InMemoryQuestionsRepository } from 'test/repository/in-memory-questions-repository'
 
@@ -41,13 +42,14 @@ describe('Edit Question', () => {
 
     inMemoryQuestionsRepository.create(newQuestion)
 
-    await expect(() => {
-      return sut.execute({
-        questionId: 'question-1',
-        authorId: 'author-2',
-        title: 'Test question',
-        content: 'Test content',
-      })
-    }).rejects.toBeInstanceOf(Error)
+    const result = await sut.execute({
+      questionId: 'question-1',
+      authorId: 'author-2',
+      title: 'Test question',
+      content: 'Test content',
+    })
+
+    expect(result.isLeft()).toBe(true)
+    expect(result.value).toBeInstanceOf(NotAllowedError)
   })
 })
