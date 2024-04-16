@@ -4,7 +4,7 @@ import { Slug } from './value-objects/slug'
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { Optional } from '@/core/types/optional'
 import { AggregateRoot } from '@/core/entities/aggregate-root'
-import { QuestionAttachmentList } from '@/domain/forum/enterprise/question-attachment-list'
+import { QuestionAttachmentList } from '@/domain/forum/enterprise/entities/question-attachment-list'
 
 export interface QuestionProps {
   authorId: UniqueEntityID

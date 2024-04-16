@@ -3,7 +3,7 @@ import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { QuestionsRepository } from '@/domain/forum/application/repositories/questions-repository'
 import { Question } from '@/domain/forum/enterprise/entities/question'
 import { QuestionAttachment } from '@/domain/forum/enterprise/entities/question-attachment'
-import { QuestionAttachmentList } from '@/domain/forum/enterprise/question-attachment-list'
+import { QuestionAttachmentList } from '@/domain/forum/enterprise/entities/question-attachment-list'
 
 interface CreateQuestionUseCaseRequest {
   authorId: string

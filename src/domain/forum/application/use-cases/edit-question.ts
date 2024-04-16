@@ -6,7 +6,7 @@ import { NotAllowedError } from '@/domain/forum/application/use-cases/errors/not
 import { ResourceNotFoundError } from '@/domain/forum/application/use-cases/errors/resource-not-found-error'
 import { Question } from '@/domain/forum/enterprise/entities/question'
 import { QuestionAttachment } from '@/domain/forum/enterprise/entities/question-attachment'
-import { QuestionAttachmentList } from '@/domain/forum/enterprise/question-attachment-list'
+import { QuestionAttachmentList } from '@/domain/forum/enterprise/entities/question-attachment-list'
 
 interface EditQuestionUseCaseRequest {
   authorId: string
