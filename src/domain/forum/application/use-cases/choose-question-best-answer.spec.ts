@@ -4,7 +4,7 @@ import { ChooseQuestionBestAnswerUseCase } from '@/domain/forum/application/use-
 import { makeQuestion } from 'test/factories/make-question'
 import { InMemoryAnswersRepository } from 'test/repository/in-memory-answers-repository'
 import { InMemoryQuestionsRepository } from 'test/repository/in-memory-questions-repository'
-import { NotAllowedError } from '@/domain/forum/application/use-cases/errors/not-allowed-error'
+import { NotAllowedError } from '@/core/errors/not-allowed-error'
 import { InMemoryAnswerAttachmentsRepository } from 'test/repository/in-memory-answer-attachment-repository'
 import { InMemoryQuestionAttachmentsRepository } from 'test/repository/in-memory-question-attachment-repository'
 

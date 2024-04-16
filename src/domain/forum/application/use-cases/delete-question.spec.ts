@@ -1,6 +1,6 @@
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { DeleteQuestionUseCase } from '@/domain/forum/application/use-cases/delete-question'
-import { NotAllowedError } from '@/domain/forum/application/use-cases/errors/not-allowed-error'
+import { NotAllowedError } from '@/core/errors/not-allowed-error'
 import { makeQuestion } from 'test/factories/make-question'
 import { makeQuestionAttachment } from 'test/factories/make-question-attachment'
 import { InMemoryQuestionAttachmentsRepository } from 'test/repository/in-memory-question-attachment-repository'
